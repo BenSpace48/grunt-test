@@ -13,6 +13,7 @@
 
 ### Future plans
 
+* Include SASS sourcemaps for compass - massively helps with debugging
 * Set up with a Magento project.
 * Set up individual tasks, e.g dev/production/optimise
 * Optimise and refactor, with the main goal is increasing the speed when the tasks are run.
