@@ -1,10 +1,8 @@
-grunt-test
-==========
-
 # Testing grunt - very early stages
 
 ### What it currently does
 
+* Package manager - All the required plugins (with specified versions) can be installed by running 'npm install'. See package.json to view the
 * htmlhint - Lints HTML files to display errors/bad coding standards
 * jshint - Lints JS files to display errors/bad coding standards (currently disabled)
 * concat - Concatenate files. Currently set up to concatenate JS files into one file (production.js)
