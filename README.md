@@ -20,6 +20,6 @@
 * Optimise images/folder for file size
 * Possibly implement QUnit - A JS unit testing framework
 * Possibly implement clean - cleans files and folders
-* Possibly implement cssmin - compresses CSS files
+* Possibly implement cssmin - compresses CSS files. Probably better to use compass for this.
 * Possibly implement selenium for testing
 * Look at responsive-images
