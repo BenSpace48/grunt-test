@@ -16,3 +16,6 @@ node_modules
 *.css.map
 css
 css/style.css
+doc
+.CHANGELOG.md
+LICENSE.md
