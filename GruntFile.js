@@ -28,7 +28,7 @@ grunt.initConfig({
 
     jshint: {
         // define the files to lint
-        files: ['gruntfile.js', 'js/*.js', 'js/build/*.js'],
+        files: ['gruntfile.js', 'js/*.js'],
         // configure JSHint (documented at http://www.jshint.com/docs/)
         options: {
             // more options here if you want to override JSHint defaults
@@ -82,7 +82,8 @@ grunt.initConfig({
                 cssDir: 'css',
                 sourcemap: true,
                 debugInfo: true,
-                watch: false
+                watch: false,
+                environment: 'development'
             }
         }
     },
@@ -99,7 +100,7 @@ grunt.initConfig({
         },
         sass: {
             files: ['sass/*.scss'],
-            tasks: ['compass']
+            tasks: ['compass:dev']
         },
         options: {
             livereload: 35729
@@ -113,6 +114,6 @@ grunt.initConfig({
 
   // Define your tasks here
 
-  grunt.registerTask('default', ['htmlhint', 'concat', 'uglify', 'compass', /*'jshint', */'watch']);
+  grunt.registerTask('default', ['htmlhint', 'concat', 'uglify', 'compass:dev', /*'jshint',*/ 'watch']);
 
 };

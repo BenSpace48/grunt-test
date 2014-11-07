@@ -1,7 +1,10 @@
+$primary-color: red;
+$secondary-color: blue;
+
 body {
     padding: 10px;
 }
 
 body p {
-    color: black;
+    color: $primary-color;
 }
