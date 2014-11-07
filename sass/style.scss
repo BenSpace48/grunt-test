@@ -1,10 +1,16 @@
-$primary-color: red;
+$primary-color: green;
 $secondary-color: blue;
+$test-padding: 20px;
+$dark-grey: #121212;
 
 body {
-    padding: 10px;
+    padding: $test-padding;
 }
 
 body p {
     color: $primary-color;
+}
+
+body {
+    background: $dark-grey;
 }

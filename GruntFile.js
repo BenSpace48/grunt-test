@@ -56,10 +56,6 @@ grunt.initConfig({
 
 
     uglify: {
-        options: {
-            // the banner is inserted at the top of the output
-            banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
-        },
         dist: {
             files: {
                 'js/build/production.js': ['<%= concat.dist.dest %>']
@@ -103,7 +99,8 @@ grunt.initConfig({
             tasks: ['compass:dev']
         },
         options: {
-            livereload: 35729
+            livereload: 35729,
+            spawn: false // false is much faster but is not as stable/reliable
         }
     }
 
@@ -114,6 +111,7 @@ grunt.initConfig({
 
   // Define your tasks here
 
-  grunt.registerTask('default', ['htmlhint', 'concat', 'uglify', 'compass:dev', /*'jshint',*/ 'watch']);
+  grunt.registerTask('default', ['htmlhint', 'compass:dev', /*'jshint',*/ 'watch']);
+  grunt.registerTask('dist', ['uglify:dist', 'compass:dist', 'concat:dist']);
 
 };
